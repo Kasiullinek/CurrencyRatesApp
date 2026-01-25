@@ -23,13 +23,13 @@ Projekt został zrealizowany w celach edukacyjnych i skupia się na:
 
 ### Backend
 
-* Django Rest Framework **lub** FastAPI
-* Python 3.x
-* Pytest / Unittest (testy jednostkowe)
+* FastAPI
+* Python 3.14
+* Pytest
 
 ### Baza danych
 
-* PostgreSQL (lub inna relacyjna SQL)
+* PostgreSQL
 
 ### Inne
 
@@ -135,6 +135,3 @@ currency-rates-app/
 * Wszystkie etapy implementacji są dokumentowane w commitach
 * Projekt jest przygotowany do demonstracji
 * Możliwość dalszej rozbudowy (wykresy, cache, autoryzacja)
-
-Kierunek / Uczelnia
-Rok akademicki
