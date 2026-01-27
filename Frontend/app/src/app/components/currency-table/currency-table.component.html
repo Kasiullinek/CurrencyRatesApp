@@ -1,0 +1,25 @@
+<button (click)="fetchRates()">Fetch rates from NBP</button>
+
+<br /><br />
+
+<label>
+  Select date:
+  <input type="date" [(ngModel)]="selectedDate" />
+</label>
+
+<button (click)="loadRates()">Load rates</button>
+
+<p>{{ message }}</p>
+
+<table *ngIf="rates.length > 0" border="1">
+  <tr>
+    <th>Currency</th>
+    <th>Rate</th>
+    <th>Date</th>
+  </tr>
+  <tr *ngFor="let rate of rates">
+    <td>{{ rate.currency }}</td>
+    <td>{{ rate.rate }}</td>
+    <td>{{ rate.date }}</td>
+  </tr>
+</table>

@@ -1,3 +1,4 @@
+
 # ========================
 # Python
 # ========================
@@ -12,10 +13,45 @@ env/
 pytest_cache/
 .coverage
 htmlcov/
+# ========================
+# Compiled output / Angular
+# ========================
+/dist
+/tmp
+/out-tsc
+/bazel-out
+/.angular/cache
 
 # ========================
-# FastAPI / SQLAlchemy
+# Node
 # ========================
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# IDEs and editors
+# ========================
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.iml
+
+# ========================
+# Visual Studio Code
+# ========================
+.vscode/
+
+# ========================
+# Python
+# ========================
+
+@@ -19,16 +53,6 @@ htmlcov/
 *.db
 alembic.ini
 
@@ -34,17 +70,29 @@ yarn-error.log*
 # ========================
 *.log
 docker-data/
+@@ -37,14 +61,18 @@ docker-data/
 postgres_data/
 
 # ========================
 # OS
+# Miscellaneous
 # ========================
 .DS_Store
 Thumbs.db
+.sass-cache/
+connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+__screenshots__/
 
 # ========================
 # IDE
+# OS
 # ========================
 .idea/
 .vscode/
 *.iml
+.DS_Store
+Thumbs.db
