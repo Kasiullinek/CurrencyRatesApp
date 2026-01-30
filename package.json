@@ -7,5 +7,12 @@
     "karma-chrome-launcher": "^3.2.0",
     "karma-coverage": "^2.2.1",
     "karma-jasmine": "^5.1.0"
+  },
+  "dependencies": {
+    "@angular/common": "^21.1.1",
+    "@angular/core": "^21.1.1",
+    "@angular/forms": "^21.1.1",
+    "@angular/platform-browser": "^21.1.1",
+    "rxjs": "^7.8.2"
   }
 }

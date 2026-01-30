@@ -1,5 +1,6 @@
 from datetime import date
 from pydantic import BaseModel
+from pydantic import ConfigDict
 
 class CurrencyRateBase(BaseModel):
     currency: str
@@ -9,5 +10,4 @@ class CurrencyRateBase(BaseModel):
 class CurrencyRateResponse(CurrencyRateBase):
     id: int
 
-    class Config:
-        from_attributes: True
+    model_config = ConfigDict(from_attributes=True)
