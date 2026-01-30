@@ -65,8 +65,16 @@
           "defaultConfiguration": "development"
         },
         "test": {
-          "builder": "@angular/build:unit-test"
+          "builder": "@angular/build:karma",
+          "options": {
+            "main": "src/test.ts",
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
+            "watch": false,
+            "browsers": "ChromeHeadlessDocker"
+          }
         }
+
       }
     }
   }

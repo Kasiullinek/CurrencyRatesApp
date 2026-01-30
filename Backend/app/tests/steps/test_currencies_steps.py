@@ -3,7 +3,7 @@ from fastapi.testclient import TestClient
 from app.main import app
 from app.database import SessionLocal
 from app.models import CurrencyRate
-from datetime import datetime
+from datetime import date
 
 client = TestClient(app)
 scenarios('../features/currency.feature')
@@ -111,5 +111,5 @@ def check_data_integrity():
     for rate in rates:
         assert isinstance(rate.currency, str)
         assert isinstance(rate.rate, float)
-        assert isinstance(rate.date, datetime.date)
+        assert isinstance(rate.date, date)
         assert rate.rate > 0, f"Invalid rate for {rate.currency}"

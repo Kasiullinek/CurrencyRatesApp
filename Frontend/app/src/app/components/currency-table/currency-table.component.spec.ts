@@ -14,8 +14,7 @@ describe('CurrencyTableComponent', () => {
     const spy = jasmine.createSpyObj('CurrencyService', ['fetchRates', 'getRatesByDate']);
 
     await TestBed.configureTestingModule({
-      imports: [FormsModule],
-      declarations: [CurrencyTableComponent],
+      imports: [FormsModule, CurrencyTableComponent],
       providers: [
         provideHttpClientTesting(),
         { provide: CurrencyService, useValue: spy }
